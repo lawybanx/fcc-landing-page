@@ -37,6 +37,9 @@ li a {
   text-decoration: none;
   color: wheat;
 }
+li a:hover {
+  color: #21D4FD;
+}
 
 section {
   text-align: center;
@@ -50,7 +53,7 @@ section h1 {
 
 .main-grid {
   display: grid;
-  grid-template-rows: auto repeat(3, 1fr);
+  grid-template-rows:  repeat(4, auto);
   grid-gap: 40px;
   text-align: center;
 }
@@ -65,7 +68,7 @@ section h1 {
   display: grid;
   grid-template-rows: auto;
   align-content: center;
-  width: 276px;
+  width: 300px;
   background: #eeeeee;
   box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.205);
   border-radius: 5px;
@@ -77,9 +80,13 @@ section h1 {
 }
 
 iframe {
-  max-width: 560px;
+  max-width: 40%;
   width: 100%;
   justify-self: center
+}
+
+form {
+  margin-bottom: 50px;
 }
 
 form p {
@@ -104,6 +111,10 @@ form p {
   border: 1px solid;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
+}
+#submit:hover {
+  background:#25cffd;
 }
 
 @media screen and (max-width:768px) {
