@@ -25,11 +25,15 @@ nav {
   font-size: 20px;
   position: fixed;
   width: 100%;
+  flex-wrap: nowrap
+}
+
+ul {
+  display: flex;
 }
 
 li {
-  display: inline;
-  list-style: none;
+  display: flex;  
   padding: 0 15px;
 }
 
@@ -102,6 +106,7 @@ form p {
   border-radius: 5px;
   width: 300px;
   height: 30px;
+  margin-bottom: 10px;
 }
 
 #submit {
@@ -114,7 +119,7 @@ form p {
   cursor: pointer;
 }
 #submit:hover {
-  background:#25cffd;
+  background:#5e8bfe;
 }
 
 @media screen and (max-width:768px) {
@@ -124,8 +129,35 @@ form p {
 
   .aside-grid {
     grid-template-columns: auto;
-    grid-template-rows: repeat(auto-fit, 280px);
     grid-gap: 50px
   }
 
+  iframe {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width : 414px) {
+  #header-img {
+    width: 20%
+  }
+  nav {
+    font-size: 15px;
+  } 
+
+  li {
+    padding: 0 7px;
+  }
+
+  section {
+    padding: 120px 10px;
+  }
+
+  iframe {
+    max-width: 90%;
+  }
+
+  form p {
+    padding: 0 50px;
+  }
 }
